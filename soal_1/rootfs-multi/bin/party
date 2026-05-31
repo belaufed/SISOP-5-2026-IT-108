@@ -1,0 +1,11 @@
+#!/bin/sh
+
+CMD="$1"
+PKG="$2"
+
+if [ "$CMD" = "install" ]; then
+    echo "Installing $PKG..."
+    wget "$PKG"
+else
+    echo "Usage: party install <url>"
+fi
